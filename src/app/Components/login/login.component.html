@@ -1,0 +1,42 @@
+<div *ngIf="isBool" style="width: 100%;height: 100%;">
+    <app-menu></app-menu>
+  </div>
+  
+  
+  <div *ngIf="!isBool">
+    <div class="container"> 
+      <form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
+       <div class="card" style="width: 500px;height:400px;background:transparent;">
+         <div class="card-body">
+          <div class="text">
+  
+            <h2>Drogas la rebaja</h2>
+            </div>
+             <div class="card-login">
+                <div class="bx-card">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Usuario</mat-label>
+                        <input type="email" #txtInput matInput placeholder="Usuario" formControlName="Usuario">
+                        <mat-error *ngIf="addressForm.controls['Usuario'].hasError('required')">
+                          Usuario <strong>requerido</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="bx-card">
+                    <mat-form-field class="example-full-width">
+                        <mat-label>Contraseña</mat-label>
+                        <input type="password"#txtContra  matInput placeholder="Contraseña" formControlName="Contraseña">
+                        <mat-error *ngIf="addressForm.controls['Contraseña'].hasError('required')">
+                          Contraseña <strong>requerido</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+              <div class="btn-footer col-8" style="position: relative;left: -6px;">
+                <button mat-raised-button color="primary" (click)="functionLogin(txtInput.value,txtContra.value)" class="boton">Acceder</button>
+              </div>
+             </div>
+         </div>
+      </div>
+      </form>
+    </div>
+  </div>

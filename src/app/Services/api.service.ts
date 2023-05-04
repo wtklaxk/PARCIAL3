@@ -8,9 +8,9 @@ export class ApiService {
 
 
 
-  public url='https://localhost:7193/api/';
+  public url='https://localhost:7137/api/';
   constructor(public httpConsumo:HttpClient) { }
-
+  
 
   public function_get_valor(objclass:string){
     return this.httpConsumo.get(this.url+objclass);

@@ -1,0 +1,44 @@
+.card{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h2{
+    overflow: hidden;
+    border-right: .100em solid #fff;
+    white-space: nowrap;
+    animation: typing 2s infinite alternate steps(28);
+    position: relative;
+    top: -40px;
+    left: -50px;
+  }
+
+
+ .card-login{
+    margin: 0;
+    right: 0;
+    position: relative;
+    left: 95px;
+    top: 50px;
+ }
+
+.example-full-width{
+    width: 300px;
+}
+
+.card{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 30%;
+  top: 25%;
+}
+.bx-card{
+  position: relative;
+  left: -100px;
+  top: -60px;
+}
+
+.boton{
+  margin-top: -50px;
+}
